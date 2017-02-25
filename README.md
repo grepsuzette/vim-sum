@@ -7,7 +7,6 @@ a visual selection or using operator-pending mode.
 
 Note: textobj-word-column is not required. 
 
-
 Examples
 --------
 
