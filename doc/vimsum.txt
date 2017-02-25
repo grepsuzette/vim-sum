@@ -1,15 +1,21 @@
-Vim-sum: Sum numbers in select or operator-pending mode
-=======================================================
+*vimsum.txt*  Sum numbers in select or operator-pending mode
+
+Author:  GrepSuzette (https://github.com/emugel/vim-sum)
+License: Same terms as Vim itself
 
 Ever used vim-textobj-word-column and selected a column of numbers (viC) that you
 wanted to add together? All this plugin does is that: summing numbers in
 a visual selection or using operator-pending mode.
 
-Note: textobj-word-column is not required. 
+Default mappings are NOT defined because each person will want to use her own
+mappings. You will need to add something like this in your .vimrc file:
 
+    nmap <Leader>a <Plug>VimSumOperatorPending
+    vmap <Leader>a <Plug>VimSumVisual
 
-Examples
---------
+I personnaly use <A-a> for vim-sequence and <A-A> for vim-sum.
+
+                                                *vimsum-examples*
 
 Suppose you have a file containing such a table and you want the sum:
 
@@ -36,24 +42,8 @@ Finally the sum (405.5) will be echoed in the status bar, and copied into
 the unnamed register. You can paste it anywhere you like using 'p' or your
 favorite way.
 
-Installation and mappings
--------------------------
 
-Use your favorite package manager. I like vim-pathogen.
-
-Default mappings are not defined, so you will need to add something like this
-in your .vimrc file:
-
-```
-    nmap <Leader>a <Plug>VimSumOperatorPending
-    vmap <Leader>a <Plug>VimSumVisual
-```
-
-I use `<A-a>` for vim-sequence and `<A-A>` for vim-sum. Choose whatever works
-for you.
-
-Valid numbers
--------------
+                                                *vimsum-valid-numbers*
 
 Numbers should be separated by spaces or end of line. 
 Here are some examples that will be recognized:
@@ -74,9 +64,8 @@ The following are NOT supported for the time being:
 >    1. 2. 3. will all be discarded, so as not to confuse them with list 
 >             items (.1 is accepted)
 
-Hide highlighted numbers
-------------------------
+                                                *vimsum-hiding*
 
 To hide highlighted numbers, use `:match None`.
 
-
+ vim:tw=78:et:ft=help:norl:
