@@ -49,7 +49,7 @@ function! s:SumSelectedText(type)
         normal! `>
     elseif a:type ==# ''
         normal! gvy
-        match Search /\(^\|\s\|\n\)\%V\zs-\?[0-9]*[,.]\?[0-9]\+\%V\ze\($\|\s\|\n\)/
+        match Search /\(^\|\s\|\n\)\zs\%V-\?[0-9]*[,.]\?[0-9]\+\%V[0-9]\?\ze\($\|\s\|\n\)/
         normal! `>
     elseif a:type ==# 'v'
         normal! `<v`>y
