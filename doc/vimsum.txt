@@ -1,7 +1,7 @@
 *vimsum.txt*  Sum numbers in select or operator-pending mode
 
 Author:  GrepSuzette (https://github.com/emugel/vim-sum)
-License: Same terms as Vim itself
+License: Public domain
 
 Ever used vim-textobj-word-column and selected a column of numbers (viC) that you
 wanted to add together? All this plugin does is that: summing numbers in

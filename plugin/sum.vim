@@ -1,4 +1,3 @@
-
 " Vim plugin for summing numbers 
 " (in select mode or in operator-pending mode)
 " Last Change:	February 25, 2017 01:36 
@@ -91,6 +90,7 @@ function! s:SumSelectedText(type)
     endif
 
     echohl MoreMsg
+    redraw
     echomsg "Sum: " . s:ssum . " (paste with 'p', ':match None' to hide)"
     echohl None
 
