@@ -1,6 +1,6 @@
 *vimsum.txt*  Sum numbers in select or operator-pending mode
 
-Author:  GrepSuzette (https://github.com/emugel/vim-sum)
+Author:  GrepSuzette (https://github.com/grepsuzette/vim-sum)
 License: Public domain
 
 Ever used vim-textobj-word-column and selected a column of numbers (viC) that you
